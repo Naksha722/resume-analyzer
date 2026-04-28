@@ -1,5 +1,5 @@
-## Resume Analyzer
-# Overview
+# Resume Analyzer
+## Overview
 
 Resume Analyzer is a full-stack application that helps users evaluate and improve resumes using ATS-based scoring and AI-powered enhancements.
 
@@ -9,12 +9,12 @@ ATS-style scoring and breakdown
 Keyword gap analysis based on job descriptions
 AI-generated resume improvements
 
-# Tech Stack
+## Tech Stack
 Backend: FastAPI
 Frontend: Next.js (App Router)
 AI Integration: Claude (Anthropic API)
 
-# Project Structure
+## Project Structure
 resume-analyzer/
 ├── backend/
 │   ├── main.py
@@ -27,34 +27,37 @@ resume-analyzer/
     ├── components/
     ├── hooks/
     └── lib/
+
 ## Local Development
-# Backend
+## Backend
 cd backend
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-# Configure environment variables
+## Configure environment variables
 cp .env.example .env
 
 uvicorn main:app --reload --port 8000
 
-# Frontend
+## Frontend
 cd frontend
 npm install
 
-# Configure environment variables
+## Configure environment variables
 cp .env.local.example .env.local
 
 npm run dev
 
 ## Environment Variables
-# Backend
+## Backend
 ANTHROPIC_API_KEY=your_key
 FRONTEND_URL=http://localhost:3000
-Frontend
+
+## Frontend
 NEXT_PUBLIC_API_URL=http://localhost:8000
-Deployment
+
+## Deployment
 Backend (Render)
 
 Build:
@@ -90,15 +93,6 @@ POST /suggest_keywords
 Improve Resume
 
 POST /improve_resume
-Cost Overview
-Usage	Estimated Cost
-100 resumes	$2–4
-500 resumes	$10–20
-1000 resumes	$20–40
-Roadmap
-Authentication
-Save analysis history
-PDF export
-Side-by-side comparison
+
 Job matching score
 Email results
