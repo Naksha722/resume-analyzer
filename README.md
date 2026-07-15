@@ -142,7 +142,7 @@ resume-analyzer/
 - Python 3.11+
 - Node.js 18+
 - Git
-- Tesseract OCR — [Download here](https://github.com/UB-Mannheim/tesseract/wiki)
+- Tesseract OCR 
 
 ### 1. Clone the Repository
 
@@ -209,16 +209,3 @@ Get a free Groq API key at: https://console.groq.com
 ```
 NEXT_PUBLIC_API_URL=http://localhost:8000
 
----
-
-## API Reference
-
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/upload_pdf` | Upload a PDF and extract text |
-| POST | `/analyze_resume` | Run NLP + ATS + LLM analysis |
-| POST | `/suggest_keywords` | Get keyword gap analysis |
-| POST | `/improve_resume` | Get AI-powered resume improvements |
-
-
----
